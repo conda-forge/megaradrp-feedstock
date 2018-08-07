@@ -1,8 +1,8 @@
 {% set name = "megaradrp" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8de263331358ed9882a7f79635866c5105b79160a71d93c4787544c1eb674b38" %}
+{% set hash_value = "fa1cef8a580ee4df14bd0412e8324c60ddc583534c8574d16a5fd19da8b91dd6" %}
 
 package:
   name: '{{ name|lower }}'
