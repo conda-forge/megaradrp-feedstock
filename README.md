@@ -19,7 +19,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/megaradrp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/megaradrp-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/megaradrp-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/megaradrp-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/megaradrp-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/megaradrp-feedstock/branch/master)
 
 Current release info
 ====================
