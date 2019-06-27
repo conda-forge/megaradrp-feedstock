@@ -1,8 +1,8 @@
 {% set name = "megaradrp" %}
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8ca76b6a2b699bb27a1c36370306f6c346fcc0e89f7534f522744dab6c098138" %}
+{% set hash_value = "13030787cf2fff57527d8151d3b2e6c4628a23b42ffb94d56aa8a34a95e05205" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
