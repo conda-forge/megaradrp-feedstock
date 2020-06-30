@@ -1,17 +1,14 @@
 {% set name = "megaradrp" %}
-{% set version = "0.9.3" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "70d051c891afdf58e29232296ac043d49f8df1e3d1e183017dd45bae2ff99601" %}
+{% set version = "0.10.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6e98a0a826c9f4e1db2b79876d9b441f330dae725430ce70c230e18332f6bb20
 
 build:
   number: 0
