@@ -11,7 +11,7 @@ source:
   sha256: 396ea2dd2e44d301ee810e0d0effbdef718ccd3d6708e93a69a790b99c880c23
 
 build:
-  number: 0
+  number: 1
   skip: true  # [(linux and py27)]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -24,7 +24,7 @@ requirements:
     - python
     - setuptools
     - numpy
-    - matplotlib
+    - matplotlib-base
     - astropy >=2.0
     - scipy
     - numina >=0.22
