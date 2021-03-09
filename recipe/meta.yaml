@@ -24,12 +24,11 @@ requirements:
     - python
     - setuptools
     - numpy
+    - matplotlib
     - astropy >=2.0
     - scipy
     - numina >=0.22
     - scikit-image
-    - enum34  # [py27]
-    - contextlib2  # [py27]
     - jsonschema
 
 test:
