@@ -26,13 +26,15 @@ requirements:
   run:
     - python
     - setuptools
-    - numpy
-    - matplotlib-base
     - astropy >=2.0
-    - scipy
-    - numina >=0.22
-    - scikit-image
     - jsonschema
+    - matplotlib-base
+    - numina >=0.33
+    - numpy
+    - packaging
+    - scikit-image
+    - scipy
+    
 
 test:
   imports:
