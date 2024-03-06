@@ -1,5 +1,5 @@
 {% set name = "megaradrp" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 017b9230a435bc1daf132a5d10bc0465cb8ed7e15eb891054ea17c5c4ecde6e1
+  sha256: 72fa19296b7fd74612e121d0275f717143f04bb4bb0a7943ae94c8db7bf2e3ba
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -26,13 +26,15 @@ requirements:
   run:
     - python
     - setuptools
-    - numpy
-    - matplotlib-base
     - astropy >=2.0
-    - scipy
-    - numina >=0.22
-    - scikit-image
     - jsonschema
+    - matplotlib-base
+    - numina >=0.33
+    - numpy
+    - packaging
+    - scikit-image
+    - scipy
+    
 
 test:
   imports:
