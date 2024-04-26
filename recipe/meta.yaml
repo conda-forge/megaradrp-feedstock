@@ -1,5 +1,5 @@
 {% set name = "megaradrp" %}
-{% set version = "0.15" %}
+{% set version = "0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72fa19296b7fd74612e121d0275f717143f04bb4bb0a7943ae94c8db7bf2e3ba
+  sha256: 255966d08a5cf5ca510d5072b9587453487bc8dc58e63eb8cded75da75ceefae
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
     - packaging
     - scikit-image
     - scipy
-    
+
 
 test:
   imports:
