@@ -20,11 +20,11 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.9
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.9
     - setuptools
     - astropy >=2.0
     - jsonschema
@@ -34,6 +34,7 @@ requirements:
     - packaging
     - scikit-image
     - scipy
+    - attrs
 
 
 test:
