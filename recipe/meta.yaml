@@ -1,5 +1,5 @@
 {% set name = "megaradrp" %}
-{% set version = "0.17" %}
+{% set version = "0.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5fd6230c1bb97ec9c9c0c97fb8e63447c3e82a79018f6b7bc1fd74943d74da79
+  sha256: 32132ed50883e68beaa40f5c6ed2be2d52c1900a03daee6247ef9343c063f78b
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
